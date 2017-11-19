@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source ${BASH_SOURCE%/*}/functions.sh
+
+su-sql $1
+
