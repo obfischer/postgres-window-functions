@@ -1,5 +1,7 @@
 CREATE TABLE human (
-  id            INT               NOT NULL,
-  surname       VARCHAR(64)       NOT NULL
-
+  id            SERIAL            NOT NULL PRIMARY KEY,
+  firstname     VARCHAR(64)       NOT NULL,
+  lastname      VARCHAR(64)       NOT NULL,
+  age           INT               NOT NULL,
+  city          VARCHAR(64)       NOT NULL
 );
