@@ -1,0 +1,6 @@
+
+PATH_OLD=${PATH}
+PATH_PREFIX=./bin
+PATH=${PATH_PREFIX}:${PATH_OLD}
+unset PATH_OLD
+
