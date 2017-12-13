@@ -31,7 +31,7 @@ function internal-sql {
     if [[ ! -r ${ffile} ]]; then echo "Datei ${ffile} ist nicht lesbar."; exit 1; fi
 
     PGPASSWORD="${effectivepw}" psql -w --host=${PGH} --port=${PGP} --username=${effectiveuser} \
-              --file=${ffile}    
+              --dbname=postgres --file=${ffile}
 }
 
 function not-empty {
